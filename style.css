@@ -1,0 +1,86 @@
+/* Reset and prevent mobile scrolling/bouncing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #111;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    touch-action: none; /* Prevents pull-to-refresh and scrolling on mobile */
+}
+
+/* Canvas Styling */
+#gameCanvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* Loading Screen */
+#loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #222;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    transition: opacity 0.5s ease;
+}
+
+/* PC Instructions */
+#instructions {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    pointer-events: none;
+    font-size: 14px;
+    z-index: 10;
+}
+
+/* Mobile Joystick */
+#joystick-container {
+    display: none; /* Shown via JS if mobile */
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    width: 120px;
+    height: 120px;
+    z-index: 20;
+    touch-action: none;
+}
+
+#joystick-base {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    position: relative;
+}
+
+#joystick-stick {
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    pointer-events: none;
+}
