@@ -14,14 +14,14 @@ if (isMobile) {
 // --- ASSET LOADING (WITH ROBUST ERROR HANDLING) ---
 const baseUrl = "https://raw.githubusercontent.com/nofacechihiro777/Pepeyo-juegazos/main/";
 const imageFiles = {
-    wall: "1000028706.jpg",
-    tree: "1000028703.jpg",
-    fence: "1000028700.jpg",
-    window: "1000028697.jpg",
-    door: "1000028694.jpg",
-    logo: "1000028691.jpg",
-    tile: "1000028688.jpg",
-    carpet: "1000028685.jpg"
+    wall: "IMG-20260618-WA0011.jpg",
+    tree: "IMG-20260618-WA0010.jpg",
+    fence: "IMG-20260618-WA0009.jpg",
+    window: "IMG-20260618-WA0008.jpg",
+    door: "IMG-20260618-WA0007.jpg",
+    logo: "IMG-20260618-WA0006.jpg",
+    tile: "IMG-20260618-WA0005.jpg",
+    carpet: "IMG-20260618-WA0004.jpg"
 };
 
 const images = {};
